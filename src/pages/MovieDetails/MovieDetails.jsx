@@ -42,7 +42,7 @@ export default function MovieDetails() {
   return (
     <>
       <Link to={backLinkHref}>go back</Link>
-      <div>MovieDetails</div>
+      <div>{movieDetails.original_title}</div>
       <ul>
         <li>
           <NavLink to="cast">Cast</NavLink>
