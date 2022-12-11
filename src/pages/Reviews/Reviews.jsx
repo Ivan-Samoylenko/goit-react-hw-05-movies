@@ -44,7 +44,7 @@ export default function Reviews() {
           ))}
         </ReviewsList>
       )}
-      {!reviews && <div>There are no reviews</div>}
+      {(!reviews || reviews.length < 1) && <div>There are no reviews</div>}
     </>
   );
 }

@@ -67,7 +67,7 @@ export default function Cast() {
           ))}
         </CastList>
       )}
-      {!cast && <div>Sorry there are no cast</div>}
+      {(!cast || cast.length < 1) && <div>Sorry there are no cast</div>}
     </>
   );
 }
