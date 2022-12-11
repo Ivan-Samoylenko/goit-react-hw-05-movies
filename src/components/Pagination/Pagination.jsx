@@ -1,4 +1,5 @@
 import { Wraper, Btn, PagList, PagListItem } from './Pagination.styled';
+import PropTypes from 'prop-types';
 
 export function Pagination({ pages, currentPage, changePage }) {
   if (pages < 2) return null;
@@ -58,3 +59,9 @@ export function Pagination({ pages, currentPage, changePage }) {
     </Wraper>
   );
 }
+
+Pagination.propTypes = {
+  pages: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  changePage: PropTypes.func.isRequired,
+};

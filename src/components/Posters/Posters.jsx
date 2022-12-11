@@ -1,5 +1,6 @@
 import { PostersList, PostersListItem } from './Posters.styled';
 import { Poster } from 'components/Poster';
+import PropTypes from 'prop-types';
 
 export function Posters({ movies, genres }) {
   return (
@@ -35,3 +36,8 @@ export function Posters({ movies, genres }) {
     </PostersList>
   );
 }
+
+Posters.propTypes = {
+  movies: PropTypes.array.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.object),
+};

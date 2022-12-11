@@ -1,6 +1,7 @@
 import { Form, Field, SearchBtn } from './SearchForm.styled';
 import { IoSearch } from 'react-icons/io5';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
 
 export function SearchForm({ onSubmit }) {
   function handleSubmit(event) {
@@ -27,3 +28,7 @@ export function SearchForm({ onSubmit }) {
     </Form>
   );
 }
+
+SearchForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

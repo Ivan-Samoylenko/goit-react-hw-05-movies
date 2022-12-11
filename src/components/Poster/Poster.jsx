@@ -7,6 +7,7 @@ import {
   PosterGanres,
 } from './Poster.styled';
 import imageNotFound from '../../images/image-not-found.jpg';
+import PropTypes from 'prop-types';
 
 export function Poster({ id, img, title, genres }) {
   const location = useLocation();
@@ -26,3 +27,10 @@ export function Poster({ id, img, title, genres }) {
     </>
   );
 }
+
+Poster.propTypes = {
+  id: PropTypes.number.isRequired,
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  genres: PropTypes.string,
+};

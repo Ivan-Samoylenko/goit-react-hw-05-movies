@@ -30,7 +30,8 @@ const theme = {
   },
   borders: {
     transparent: '0 solid transparent',
-    movieDetails: '2 solid #ffff88',
+    movieDetails: '2px solid #ffff88',
+    AdditionalInfo: '1px solid #222244',
   },
   shadows: {
     poster: {
